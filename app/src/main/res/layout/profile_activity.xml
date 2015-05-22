@@ -1,0 +1,103 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent" android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp" tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:background="#000000"
+        android:id="@+id/profile_cover_image" >
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="#222222"
+            android:alpha="0.7"
+            android:layout_alignParentBottom="true"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="25"
+                android:alpha="1"
+                android:id="@+id/profile_user_age"
+                android:textSize="20dp"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:layout_centerVertical="true"
+
+                android:layout_alignParentBottom="true"
+                android:layout_toLeftOf="@+id/profile_user_name"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="אליאור עזריאל"
+                android:id="@+id/profile_user_name"
+                android:textSize="30dp"
+                android:padding="0dp"
+                android:alpha="1"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="8dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1390 נקודות"
+            android:id="@+id/textView"
+            android:textSize="23dp"
+            android:layout_weight="33"
+            android:padding="5dp"
+            android:gravity="center_horizontal|center_vertical"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="480 אירועים"
+            android:id="@+id/textView2"
+            android:textSize="23dp"
+            android:layout_weight="33"
+            android:padding="5dp"
+            android:gravity="center_horizontal|center_vertical"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2 אירועים"
+            android:id="@+id/textView3"
+            android:textSize="23dp"
+            android:layout_weight="33"
+            android:padding="5dp"
+            android:gravity="center_horizontal|center_vertical"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="עליי"
+        android:id="@+id/profile_about_me"
+        android:textSize="23dp"
+        android:padding="10dp"
+        />
+
+
+
+</LinearLayout>
